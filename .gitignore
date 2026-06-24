@@ -1,0 +1,9 @@
+# Ambientes Virtuais e Isolamento
+b2bflow/
+
+# Variáveis de Ambiente e Credenciais Sensíveis
+.env
+
+# Arquivos de Cache de Compilação do Interpretador
+__pycache__/
+*.pyc
