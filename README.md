@@ -62,5 +62,3 @@ Para garantir o isolamento topológico das dependências da aplicação, exige-s
 
 ## 4. Qualidade de Código e Boas Práticas
 O orquestrador `main.py` foi codificado priorizando a robustez do fluxo. Implementou-se o rigoroso tratamento de exceções (blocos `try-except`) na camada de rede (via biblioteca `requests`), com mapeamento de *status code* HTTP. O sistema expõe logs estruturados de execução no *stdout* do terminal, garantindo a rastreabilidade total de falhas na extração de dados do Supabase ou na submissão de *payloads* para a Z-API.
-O orquestrador `main.py` foi codificado priorizando a robustez do fluxo. Implementou-se o rigoroso tratamento de exceções (blocos `try-except`) na camada de rede (via biblioteca `requests`), com mapeamento de *status code* HTTP. O sistema expõe logs estruturados de execução no *stdout* do terminal, garantindo a rastreabilidade total de falhas na extração de dados do Supabase ou na submissão de *payloads* para a Z-API.
->>>>>>> 25014acf5b3eabb0d664f9c2de15b0a94970d5dc
