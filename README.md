@@ -1,11 +1,7 @@
 # Desafio b2bflow: Integração Python, Supabase e Z-API ⚡
 
 ## Visão Geral Arquitetural
-<<<<<<< HEAD
 Este repositório contém a prova de conceito (PoC) desenvolvida para a 1ª etapa do processo seletivo de Estágio em Desenvolvimento Python da b2bflow. O sistema implementa um pipeline de orquestração automatizada que extrai tuplas de contatos de um banco de dados relacional e efetua o disparo dinâmico de mensagens via protocolo HTTP utilizando uma API de mensageria.
-=======
-Este repositório contém a prova de conceito (PoC) desenvolvida para a 1ª etapa do processo seletivo de Estágio em Desenvolvimento Python da b2bflow. O sistema implementa um pipeline de orquestração automatizada que extrai tuplas de contatos de um banco de dados relacional e efetua o disparo dinâmico de mensagens via protocolo HTTP utilizando uma API.
->>>>>>> 25014acf5b3eabb0d664f9c2de15b0a94970d5dc
 
 ---
 
@@ -22,14 +18,9 @@ CREATE TABLE contatos (
 
 -- Inserção das tuplas de teste
 INSERT INTO contatos (nome, telefone) VALUES
-<<<<<<< HEAD
 ('Mirella', '5531987743302');
 ```
-=======
-('Deborah', '5531987743302');
-```
 
->>>>>>> 25014acf5b3eabb0d664f9c2de15b0a94970d5dc
 ---
 
 ## 2. Topologia de Variáveis de Ambiente (.env)
@@ -48,11 +39,7 @@ ZAPI_CLIENT_TOKEN=seu_token_de_seguranca_da_conta
 
 ---
 
-<<<<<<< HEAD
 ## 3. Guia de Execução (Orquestração)
-=======
-## 3. Guia de Execução
->>>>>>> 25014acf5b3eabb0d664f9c2de15b0a94970d5dc
 Para garantir o isolamento topológico das dependências da aplicação, exige-se a execução do fluxo no interior de um ambiente virtual. 
 
 **Procedimentos via terminal:**
@@ -74,8 +61,6 @@ Para garantir o isolamento topológico das dependências da aplicação, exige-s
 ---
 
 ## 4. Qualidade de Código e Boas Práticas
-<<<<<<< HEAD
 O orquestrador `main.py` foi codificado priorizando a robustez do fluxo. Implementou-se o rigoroso tratamento de exceções (blocos `try-except`) na camada de rede (via biblioteca `requests`), com mapeamento de *status code* HTTP. O sistema expõe logs estruturados de execução no *stdout* do terminal, garantindo a rastreabilidade total de falhas na extração de dados do Supabase ou na submissão de *payloads* para a Z-API.
-=======
 O orquestrador `main.py` foi codificado priorizando a robustez do fluxo. Implementou-se o rigoroso tratamento de exceções (blocos `try-except`) na camada de rede (via biblioteca `requests`), com mapeamento de *status code* HTTP. O sistema expõe logs estruturados de execução no *stdout* do terminal, garantindo a rastreabilidade total de falhas na extração de dados do Supabase ou na submissão de *payloads* para a Z-API.
 >>>>>>> 25014acf5b3eabb0d664f9c2de15b0a94970d5dc
