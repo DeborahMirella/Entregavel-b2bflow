@@ -18,7 +18,7 @@ CREATE TABLE contatos (
 
 -- Inserção das tuplas de teste
 INSERT INTO contatos (nome, telefone) VALUES
-('Mirella', '5531987743302');
+('Deborah', '5531987743302');
 ```
 
 ---
