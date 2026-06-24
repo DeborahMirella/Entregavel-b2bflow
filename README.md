@@ -1,5 +1,3 @@
-# Entreg-vel-b2bflow
-
 # Desafio b2bflow: Integração Python, Supabase e Z-API ⚡
 
 ## Visão Geral Arquitetural
